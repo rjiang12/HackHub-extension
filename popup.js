@@ -6,13 +6,13 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
     if(!darkMode) {
       darkMode = true;
       chrome.tabs.executeScript({
-        file:
+        file: "darkModeOn.js"
       }); 
     }
     else {
       darkMode = false;
       chrome.tabs.executeScript({
-        file:
+        file: "darkModeOff.js"
       }); 
     }
   })

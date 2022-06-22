@@ -1,0 +1,19 @@
+{
+  "name": "dark-mode-plus",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Dark mode, but with more?",
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_name": "dark-mode-plus"
+  },
+  "permissions": [
+    "tabs",
+    "https://*/*",
+    "http://*/*"
+  ]
+}

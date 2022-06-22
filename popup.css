@@ -1,0 +1,13 @@
+.darkToggle {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 4px 2px;
+}
+.darkToggle:hover{
+    background-color: blue
+}
+

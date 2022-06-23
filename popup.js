@@ -34,10 +34,9 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
       for(let i = 0; i < all_tasks.length; i++){
           all_tasks[i].addEventListener("click", function(){
             this.parentNode.remove();
-            localStorage.removeItem("list-items");
+            localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
         });
       }
-      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
   });
 
   document.addEventListener("keydown", (e) => {
@@ -56,10 +55,9 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
       for(let i = 0; i < all_tasks.length; i++){
           all_tasks[i].addEventListener("click", function(){
             this.parentNode.remove();
-            localStorage.removeItem("list-items");
+            localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
         });
       }
-      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
     }
 });
 
@@ -67,10 +65,9 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
   for(let i = 0; i < all_tasks.length; i++){
       all_tasks[i].addEventListener("click", function(){
         this.parentNode.remove();
-        localStorage.removeItem("list-items");
+        localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
     });
   }
-  localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
   
   document.querySelector("#github").addEventListener("click", function(e) {
     e.preventDefault();

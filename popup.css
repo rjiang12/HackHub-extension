@@ -44,8 +44,11 @@ justify-content: center;
 }
 
 #my-input {
-border-radius: 4px;
+outline: none;
+border: none;
+border-bottom: 1px solid black;
 height: 20px;
+/*box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);*/
 }
 
 #add-task {
@@ -67,6 +70,7 @@ display: inline-flex;
 
 .task span {
 width: 180px;
+margin-left: 10px;
 }
 
 .task span p {
@@ -85,8 +89,12 @@ width: 50px;
 height: 50px;
 }
 
-.site:hover {
+.sites:hover {
 cursor: pointer;
+}
+
+.sites a:hover {
+opacity: 69%;
 }
 
 a {

@@ -20,13 +20,18 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
   });
 
   document.querySelector('#add-task').addEventListener("click", function(){
+    if(document.querySelector('#my-input').value.includes("?")) {
+      let url = `https://stackoverflow.com/search?q=${document.querySelector('#my-input').value}}`;
+      chrome.tabs.create({url: url, active: true});
+    }
+    else {
       document.querySelector('.to-do-list').innerHTML += `
-          <div class="task">
-              <span id="taskname">
-                  <p>${document.querySelector('#my-input').value}</p>
-              </span>
-              <button class="delete">x</button>
-          </div>
+        <div class="task">
+            <span id="taskname">
+                <p>${document.querySelector('#my-input').value}</p>
+            </span>
+            <button class="delete">x</button>
+        </div>
       `;
       localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
       document.querySelector('#my-input').value = "";
@@ -37,7 +42,8 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
             localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
         });
       }
-  });
+  }
+});
 
   document.addEventListener("keydown", (e) => {
     if(e.code === 'Enter') {

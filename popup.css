@@ -30,3 +30,40 @@ h1 {
   color: red;
 }
 
+#my-input {
+  border-radius: 4px;
+  height: 20px;
+}
+
+#add-task {
+  background-color: black;
+  color: white;
+  border-color: black;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+#add-task:hover {
+  background-color: white;
+  color: black;
+}
+
+.task {
+  display: inline-flex;
+}
+
+.task span {
+  width: 180px;
+}
+
+.task span p {
+  width: 170px;
+  overflow-wrap: break-word;
+}
+
+.delete {
+  border-style: hidden;
+  background-color: white;
+  color: red;
+}
+

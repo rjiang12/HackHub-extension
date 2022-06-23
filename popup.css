@@ -1,94 +1,94 @@
 .darkToggle {
-    background-color: black;
-    border-color: black; 
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 12px;
-    margin: 4px 2px;
+  background-color: black;
+  border-color: black; 
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 4px 2px;
 }
 .darkToggle:hover{
-    background-color: white;
-    color: black;
-    border-color: black;
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
 .popup_div {
-  min-width: 200px;
-  min-height: 150px;
+min-width: 200px;
+min-height: 150px;
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
-  font-size: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: -20px;
-  margin-top: 0px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: italic;
+font-size: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: -20px;
+margin-top: 0px;
 }
 
 .color2 {
-  color: red;
+color: red;
 }
 
 h6 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: italic;
+font-weight: lighter;
+font-size: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 #my-input {
-  border-radius: 4px;
-  height: 20px;
+border-radius: 4px;
+height: 20px;
 }
 
 #add-task {
-  background-color: black;
-  color: white;
-  border-color: black;
-  border-radius: 4px;
-  font-weight: bolder;
+background-color: black;
+color: white;
+border-color: black;
+border-radius: 4px;
+font-weight: bolder;
 }
 
 #add-task:hover {
-  background-color: white;
-  color: black;
+background-color: white;
+color: black;
 }
 
 .task {
-  display: inline-flex;
+display: inline-flex;
 }
 
 .task span {
-  width: 180px;
+width: 180px;
 }
 
 .task span p {
-  width: 170px;
-  overflow-wrap: break-word;
+width: 170px;
+overflow-wrap: break-word;
 }
 
 .delete {
-  border-style: hidden;
-  background-color: white;
-  color: red;
+border-style: hidden;
+background-color: white;
+color: red;
 }
 
 .sites img {
-  width: 50px;
-  height: 50px;
+width: 50px;
+height: 50px;
 }
 
 .site:hover {
-  cursor: pointer;
+cursor: pointer;
 }
 
 a {
-  text-decoration: none;
+text-decoration: none;
 }

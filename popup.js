@@ -1,4 +1,6 @@
 if(document.querySelector(".popup_div") && document.querySelector(".button") && document.querySelector(".darkToggle")) {
+  if(localStorage.getItem("list-items")) document.querySelector('.to-do-list').innerHTML = localStorage.getItem("list-items");
+
   const darkToggle = document.querySelector(".darkToggle");
   let darkMode = false;
   
@@ -26,14 +28,16 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
               <button class="delete">x</button>
           </div>
       `;
+      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
       document.querySelector('#my-input').value = "";
-      
       const all_tasks = document.querySelectorAll(".delete");
       for(let i = 0; i < all_tasks.length; i++){
           all_tasks[i].addEventListener("click", function(){
-              this.parentNode.remove();
+            this.parentNode.remove();
+            localStorage.removeItem("list-items");
         });
       }
+      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
   });
 
   document.addEventListener("keydown", (e) => {
@@ -46,13 +50,26 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
             <button class="delete">x</button>
         </div>
       `;
+      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
       document.querySelector('#my-input').value = "";
       const all_tasks = document.querySelectorAll(".delete");
       for(let i = 0; i < all_tasks.length; i++){
           all_tasks[i].addEventListener("click", function(){
-              this.parentNode.remove();
+            this.parentNode.remove();
+            localStorage.removeItem("list-items");
         });
       }
+      localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
     }
 });
+
+  const all_tasks = document.querySelectorAll(".delete");
+  for(let i = 0; i < all_tasks.length; i++){
+      all_tasks[i].addEventListener("click", function(){
+        this.parentNode.remove();
+        localStorage.removeItem("list-items");
+    });
+  }
+  localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
+  
 }

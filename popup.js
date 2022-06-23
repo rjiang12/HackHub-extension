@@ -72,4 +72,19 @@ if(document.querySelector(".popup_div") && document.querySelector(".button") && 
   }
   localStorage.setItem("list-items", document.querySelector('.to-do-list').innerHTML);
   
+  document.querySelector("#github").addEventListener("click", function(e) {
+    e.preventDefault();
+    chrome.tabs.create({url: 'https://github.com/', active: true});
+  })
+
+  document.querySelector("#stackof").addEventListener("click", function(e) {
+    e.preventDefault();
+    chrome.tabs.create({url: 'https://stackoverflow.com/', active: true});
+  })
+
+  document.querySelector("#leetcode").addEventListener("click", function(e) {
+    e.preventDefault();
+    chrome.tabs.create({url: 'https://leetcode.com/problemset/all/', active: true});
+  })
+
 }

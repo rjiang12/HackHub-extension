@@ -67,3 +67,15 @@ h1 {
   color: red;
 }
 
+.sites img {
+  width: 50px;
+  height: 50px;
+}
+
+.site:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

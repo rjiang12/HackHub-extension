@@ -21,13 +21,25 @@
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: italic;
+  font-size: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -20px;
 }
 
 .color2 {
   color: red;
+}
+
+h6 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #my-input {

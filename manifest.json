@@ -1,15 +1,23 @@
 {
-  "name": "dark-mode-plus",
-  "version": "1.0.0",
+  "name": "HackHub",
+  "version": "1.6.9",
   "manifest_version": 2,
-  "description": "Dark mode, but with more?",
+  "description": "Dark mode, a to-do list, and all the sites you'll ever need. What more could you want?",
   "background": {
     "scripts": ["popup.js"],
     "persistent": true
   },
+  "icons": {
+    "16": "assets/icon.png",
+    "24": "assets/icon.png",
+    "32": "assets/icon.png",
+    "64": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
   "browser_action": {
     "default_popup": "popup.html",
-    "default_name": "dark-mode-plus"
+    "default_name": "dark-mode-plus",
+    "default_icon": "assets/icon.png"
   },
   "permissions": [
     "tabs",
